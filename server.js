@@ -51,7 +51,7 @@ function sendSuccess(res, data, message = 'Success') {
   return res.json({ success: true, message, data });
 }
 
-// ─── Admin key helper ─────────────────────────────────────────────────────────
+// ─── Admin key helpers ─────────────────────────────────────────────────────────
 // Fallback key for when the DB is unreachable (e.g. SUPABASE_SERVICE_KEY not set).
 // Matches the key hardcoded in admin.html so the admin panel always works.
 const HARDCODED_ADMIN_KEY = process.env.ADMIN_KEY || 'ZMAFRDEAL-ADMIN-2024';
